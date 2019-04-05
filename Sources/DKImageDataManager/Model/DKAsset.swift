@@ -14,7 +14,8 @@ public extension CGSize {
 		let scale = UIScreen.main.scale
         
         let screenHeight = max(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
-        return CGSize(width: self.width * scale, height: self.height * scale)
+//        return CGSize(width: self.width * scale, height: self.height * scale)
+        return CGSize(width: 160.0, height: 160.0)
 	}
 }
 
