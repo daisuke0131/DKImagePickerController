@@ -550,7 +550,7 @@ open class DKAssetGroupDetailVC: UIViewController,
       cell.tag = tag
 
         if self.thumbnailSize.equalTo(CGSize.zero), let layoutAttributes = self.collectionView?.collectionViewLayout.layoutAttributesForItem(at: indexPath) {
-            self.thumbnailSize = layoutAttributes.size.toPixel()
+            self.thumbnailSize = layoutAttributes.size.toThumbnailPixel()
         }
 
         cell.thumbnailImage = nil
